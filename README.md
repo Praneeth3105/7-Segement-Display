@@ -39,11 +39,8 @@ Seven-Segment-Display-Counter/
 │
 ├── sketch.ino
 ├── diagram.json
-├── wokwi.toml
 ├── README.md
-└── images/
-    ├── circuit.png
-    └── output.png
+
 ```
 
 ---
