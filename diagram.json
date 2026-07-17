@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "author": "Arduino Seven Segment Display",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -18.6, "left": 85.8, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": -43.02,
+      "left": -33.32,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 51.95,
+      "left": 153.6,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-resistor", "id": "r2", "top": 70, "left": 150, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r3", "top": 90, "left": 150, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r4", "top": 110, "left": 150, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r5", "top": 130, "left": 150, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r6", "top": 150, "left": 150, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r7", "top": 170, "left": 150, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "uno:2", "r1:1", "green", [] ],
+    [ "uno:3", "r2:1", "blue", [] ],
+    [ "uno:4", "r3:1", "yellow", [] ],
+    [ "uno:5", "r4:1", "orange", [] ],
+    [ "uno:6", "r5:1", "red", [] ],
+    [ "uno:7", "r6:1", "purple", [] ],
+    [ "uno:8", "r7:1", "gray", [] ],
+    [ "r1:2", "sevseg1:A", "green", [] ],
+    [ "r2:2", "sevseg1:B", "blue", [] ],
+    [ "r3:2", "sevseg1:C", "yellow", [] ],
+    [ "r4:2", "sevseg1:D", "orange", [] ],
+    [ "r5:2", "sevseg1:E", "red", [] ],
+    [ "r6:2", "sevseg1:F", "purple", [] ],
+    [ "r7:2", "sevseg1:G", "gray", [] ],
+    [ "uno:9", "sevseg1:COM", "black", [] ],
+    [ "uno:GND", "sevseg1:COM", "black", [] ]
+  ],
+  "dependencies": {}
+}
