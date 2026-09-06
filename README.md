@@ -142,6 +142,3 @@ This project helps in understanding:
 - ESP32 Integration
 
 ---
-
-
-
