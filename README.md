@@ -19,7 +19,6 @@ The program stores the segment patterns for digits **0–9** in a two-dimensiona
 - Prints the displayed digit on the Serial Monitor
 - Beginner-friendly Arduino code
 - Simulated using the Wokwi IoT Simulator
-
 ---
 
 ## 🛠 Technologies Used
